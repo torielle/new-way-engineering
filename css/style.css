@@ -390,37 +390,34 @@ time {
 	font-size: 13px;
 }
 
-.search input::before {
-	content: "";
-	top: 20px;
-	right: 200px;
+.search img {
+	position: absolute;
+	top: 30px;
+	left: 380px;
 	display: block;
-	background: url("../img/search.png") no-repeat;
-	width: 12px;
-	height: 12px;
+	width: 15px;
+	height: 15px;
+	opacity: 0.7;
 }
 
 .about-servers {
 	display: inline-block;
 	float: left;
 	width: 610px;
-	height: 250px;
+	height: 305px;
 	margin: 20px;
-	padding: 30px 20px 0 30px;
+	padding: 0 20px 0 30px;
 	background-color: white;
 	position: absolute;
 	top: 36px;
 	right: 110px;
 }
 
-.about-servers h2,
-.about-servers h2 + p,
-.about-servers a {
-	width: 50%;
-}
-
-.about-servers p ~ p {
-	width: 30%;
+.text-part {
+	position: absolute;
+	z-index: 10;
+	height: 305px;
+	width: 305px;
 }
 
 .about-servers img {
@@ -431,7 +428,56 @@ time {
 	right: 0;
 }
 
+.text-part h2 {
+	padding-top: 40px;
+}
+
+.text-part h2::after {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 2px;
+	border-top: 2px solid rgba(9, 55, 124, 0.7);
+	margin-top: 20px;
+}
+
+.text-part a {
+	display: block;
+	width: 90px;
+	height: 15px;
+	border: 1.5px solid rgba(9, 55, 124, 0.7);
+	text-decoration: none;
+	text-align: center;
+	padding: 9px;
+	color: black;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+img + a {
+	position: absolute;
+	bottom: 5px;
+	right: 60px;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	padding: 10px;
+	background: url("../img/arrow-64.png") no-repeat 50% 50% white;
+	font-size: 0;
+}
+
+.about-servers a ~ a {
+	position: absolute;
+	bottom: 5px;
+	right: 20px;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	padding: 10px;
+	background: url("../img/arrow-63.png") no-repeat 50% 50% white;
+	font-size: 0;
 
 
+}
 
 
