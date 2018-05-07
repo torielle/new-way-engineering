@@ -540,94 +540,95 @@ img + a {
 	border: 1px solid rgba(211, 211, 211, 0.5);
 }
 
-.new-products-images img {
+.new-products-images .products-total {
 	display: block;
 	float: left;
 	padding: 20px;
 	position: relative;
 }
 
+.products-total {
+	height: 215px;
+	width: 175px;
+}
 
-.new-products-images .caption-1 {
-	position: absolute;
+.products-total .caption-1,
+.products-total .caption-2,
+.products-total .caption-3 {
 	display: block;
 	top: 190px;
+	text-align: center;
+	border-bottom: 1px solid rgba(128,128,128,0.2);
+	width: 180px;
+	height: 50px;
+}
+.products-total .caption-1 {
 	left: 20px;
-	text-align: center;
-	border-bottom: 1px solid rgba(128,128,128,0.2);
-	width: 180px;
-	height: 60px;
-
 }
-
-.new-products-images .caption-2 {
-	position: absolute;
-	display: block;
-	top: 190px;
+.products-total .caption-2 {
 	left: 235px;
-	text-align: center;
-	border-bottom: 1px solid rgba(128,128,128,0.2);
-	width: 180px;
-	height: 60px;
 }
-
-.new-products-images .caption-3 {
-	position: absolute;
-	display: block;
-	top: 190px;
+.products-total .caption-3 {
 	right: 30px;
-	text-align: center;
-	border-bottom: 1px solid rgba(128,128,128,0.2);
-	width: 180px;
-	height: 60px;
 }
 
-.caption-1 span,
-.caption-2 span,
-.caption-3 span {
+.products-total span {
 	font-weight: bold;
 	font-size: 16px;
 }
 
-.caption-1 a,
-.caption-2 a,
-.caption-3 a {
+.products-total a {
 	text-decoration: none;
 	color: black;
 }
 
-.caption-1 p,
-.caption-2 p,
-.caption-3 p {
+.products-total p {
 	color: gray;
 	margin: 5px 0 0 0;
 
 }
 
-input[type*='button'] {
+.product-basket {
 	background-color: white;
 	border: none;
 	width: 180px;
-	height: 40px;
-	margin-top: 25px;
+	height: 30px;
+	margin-top: 20px;
 	font-weight: bolder;
-	font-size: 11px;
+	font-size: 12px;
 	position: absolute;
-	right: 0;
+	right: 15px;
 	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 10px;
 }
 
-/*.basket a::before {
+ .product-basket::after {
 	content: "";
 	position: absolute;
-	top: 7px;
-	right: 65px;
+	right: 125px;
+	bottom: 15px;
 	width: 16px;
-	padding-right: 3px;
 	height: 16px;
 	opacity: 0.7;
 	display: block;
 	background: url("../img/basket-16.png") no-repeat;
+}
+
+.product-basket:hover {
+	background-color: rgba(9, 55, 124, 0.7);
+	color: white;
+}
+
+.product-basket:hover::after {
+	background: url("../img/basket-16w.png") no-repeat;
+}
+
+.products-total:hover {
+	box-shadow: 0 0 2px blue;
+	border: 1px solid rgba(211, 211, 211, 0.5);
+
 }
 
 
