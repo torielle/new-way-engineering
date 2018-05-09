@@ -641,7 +641,7 @@ img + a {
 }
 
 .products-total:hover {
-	box-shadow: 0 0 5px blue;
+	box-shadow: 0 0 5px gray;
 	border: 1px solid rgba(211, 211, 211, 0.5);
 }
 
@@ -655,4 +655,35 @@ img + a {
 	top: 675px;
 	right: 120px;
 	margin: 20px;
+}
+
+.payment-info {
+    width: 650px;
+    height: 125px;
+    position: absolute;
+    top: 1010px;
+    right: 140px;
+    background-color: white;
+    display: block;
+    float: left;
+}
+
+.payment {
+    width: 131.5px;
+    height: 10px;
+	padding: 40px 10px 10px 10px;
+	margin: 40px 0 20px 10px;
+	text-align: center;
+    background-color: white;
+    display: inline-block;
+    float: left;
+    border-right: 1px solid rgba(128,128,128,0.2);
+	color: black;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.payment:last-child {
+	border: none;
+	margin-left: 0;
 }
