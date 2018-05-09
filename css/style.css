@@ -57,9 +57,8 @@ body {
     float: left;
     width: 280px;
 	height: 20px;
-	margin: 0;
-    padding: 0;
-    margin-left: 150px;
+	padding: 0;
+	margin: 0 0 0 150px;
 }
 
 .main-info ul li {
@@ -498,8 +497,8 @@ img + a {
 }
 
 .new-products h3,
-.firstlink,
-.secondlink,
+.first-link,
+.second-link,
 .popular-products h3 {
 	display: inline-block;
 	float: left;
@@ -510,7 +509,7 @@ img + a {
 	padding-right: 0;
 }
 
-.secondlink {
+.second-link {
 	padding-left: 0;
 }
 
@@ -522,7 +521,7 @@ img + a {
 	margin-bottom: 0;
 }
 
-.new-products .firstlink {
+.new-products .first-link {
 	position: relative;
 }
 
