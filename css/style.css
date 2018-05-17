@@ -223,7 +223,7 @@ body {
 
 main {
 	width: 1150px;
-	min-height: 1500px;
+	min-height: 1200px;
     margin: 0 auto;
 	background-color: rgba(128,128,128,0.1); 
 	display: block;
@@ -704,4 +704,28 @@ img + a {
 
 .payment:nth-child(3) {
 	background: url("../img/delivery.png") no-repeat 50% -10%;
+}
+
+.page-footer {
+    width: 1150px;
+    height: 245px;
+    background-color: #424141;
+    color: rgba(255, 255, 255, 0.9);
+    border-top: 3px solid rgba(71, 113, 211, 0.9);
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer-top {
+    height: 180px;
+    display: flex;
+}
+
+.footer-feedback-4 {
+
+}
+
+.footer-bottom {
+    height: 65px;
+    background-color: rgba(71, 113, 211, 0.9);
 }
