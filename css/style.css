@@ -734,7 +734,7 @@ img + a {
 .footer-feedback-1 {
 	margin: 0 0 0 30px;
 	width: 200px;
-	height: 150px;
+	height: 170px;
 }
 
 .footer-feedback-1 p {
@@ -743,6 +743,45 @@ img + a {
 
 .footer-feedback-1 h2 {
 	margin: 5px 0;
+}
+
+form {
+	margin: 40px 0 0 0;
+	height: 70px;
+	width: 220px;
+	position: relative;
+	right: 70px;
+}
+
+#email {
+	margin: 10px 0 0 0;
+	padding: 10px;
+	background-color: black;
+	color: white;
+	border: none;
+	height: 16px;
+	width: 180px;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+label {
+	font-weight: bold;
+}
+
+form span {
+	width: 32px;
+	height: 32px;
+	display: flex;
+	font-size: 0;
+	background: url("../img/button.png") no-repeat;
+	border: 2px solid #4771d3;
+	position: relative;
+	bottom: 36px;
+	left: 201px;
+	cursor: pointer;
 }
 
 .footer-logo {
