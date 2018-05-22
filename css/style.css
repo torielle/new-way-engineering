@@ -71,6 +71,18 @@ body {
     text-decoration: none;
 	color: black;
 }
+
+.main-info a:hover {
+	text-decoration: underline;
+
+}
+
+.main-info ul li:hover {
+	transform: scale(1.1);
+	transition: ease-out 0.1s;
+}
+
+
 .header-social {
 	float: left;
     width: 115px;
