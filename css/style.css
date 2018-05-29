@@ -287,7 +287,18 @@ aside {
 	flex-direction: column;	
 	background-color: white;
 }
-.catalog div {
+
+.catalog-main {
+	padding: 0;
+	margin: 0;
+}
+
+.catalog-main li a:hover {
+	text-decoration: underline;
+}
+
+
+.catalog ul li {
 	display: flex;
 	align-items: center;
 	border-bottom: 1px solid rgba(128,128,128,0.2);
@@ -295,11 +306,12 @@ aside {
 	width: 200px;
 	height: 15px;
 	font-size: 13px;
+	list-style: none;
 }
-.catalog div:last-child {
+.catalog ul li:last-child {
 	border: none;
 }
-.catalog div a {
+.catalog-main a {
 	display: flex;
 	align-items: center;
 	text-decoration: none;
@@ -309,7 +321,7 @@ aside {
 	position: relative;
 }
 
-.catalog div a::before {
+.catalog-main a::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -321,8 +333,30 @@ aside {
 	background: url("../img/arrow.png") no-repeat;
 }
 
-.catalog div:first-child a::before {
+.catalog-main li:first-child a::before {
 	background: url("../img/arrow-top.png") no-repeat;
+}
+
+.submenu {
+	display: none;
+	background-color: white;
+	margin: 270px 0 0 120px;
+	padding: 0;
+	width: 500px;
+	height: 305px;
+	z-index: 10;
+
+}
+
+.submenu li {
+	list-style: none;
+	display: block;
+	border-bottom: 1px solid rgba(128,128,128,0.2);
+	padding: 10px 15px;
+	width: 500px;
+	height: 15px;
+	font-size: 13px;
+
 }
 
 .feedback-menu {
@@ -419,7 +453,6 @@ time {
 }
 .main-nav {
 	width: 600px;
-
 }
 
 .search input {
@@ -428,6 +461,7 @@ time {
 	padding: 10px 10px 10px 50px;
 	margin: 20px;
 	position: absolute;
+	z-index: 9;
 	top: 0;
 	right: 120px;
 	border: none;
@@ -454,6 +488,7 @@ time {
 	padding: 0 20px 0 30px;
 	background-color: white;
 	position: absolute;
+	z-index: 9;
 	top: 36px;
 	right: 120px;
 }
@@ -497,6 +532,12 @@ time {
 	color: black;
 	font-weight: bold;
 	margin-top: 30px;
+}
+
+.text-part a:hover {
+	color: white;
+	background-color: rgba(9, 55, 124, 0.7);
+	border: 1.5px solid white;
 }
 
 img + a {
@@ -731,6 +772,10 @@ img + a {
 	color: black;
 	text-decoration: none;
 	font-weight: 500;
+}
+
+.payment:hover {
+	text-decoration: underline;
 }
 
 .payment:last-child {
